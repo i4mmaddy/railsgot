@@ -11,7 +11,7 @@ SAST:
 
 #DAST:
  # type: "WEB" ## API, WEB, WEB-ADV
-  #URL: "https://www.boman.ai/" 
+  # URL: "https://www.boman.ai/" 
 
 Secret_Scan: True
 
