@@ -10,8 +10,8 @@ SAST:
   language: "ruby" 
 
 DAST:
-  type: "API" ## API, WEB, WEB-ADV
-  URL: "http://demo.testfire.net" 
+  type: "WEB" ## API, WEB, WEB-ADV
+  URL: "https://www.boman.ai" 
 
 Secret_Scan: True
 
