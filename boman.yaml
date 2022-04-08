@@ -3,17 +3,17 @@ Auth:
   customer_token:  "389e4d4a-ece0-4c1c-be13-384b1434c0f6"
 
    
-SCA:
-   language: "js" 
+#SCA:
+#   language: "js" 
 
-SAST:
-  language: "ruby" 
+#SAST:
+ # language: "ruby" 
 
 DAST:
   type: "WEB" ## API, WEB, WEB-ADV
-  URL: "http://demo.testfire.net/" 
+  URL: "https://www.boman.ai/" 
 
-Secret_Scan: True
+#Secret_Scan: True
 
 
 
