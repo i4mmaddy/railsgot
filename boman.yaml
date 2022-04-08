@@ -5,6 +5,9 @@ Auth:
 
 SAST:
    language: "ruby" 
+   
+SCA:
+   language: "js" 
 
 DAST:
    type: "Webapp" ## API, WebApp 
