@@ -3,11 +3,11 @@ Auth:
   customer_token:  "389e4d4a-ece0-4c1c-be13-384b1434c0f6"
 
 
-# SAST:
-#   language: "ruby" 
+SAST:
+   language: "ruby" 
 
-# DAST:
-#   type: "Webapp" ## API, WebApp 
-#   URL: "http://demo.testfire.net" 
+DAST:
+   type: "Webapp" ## API, WebApp 
+   URL: "http://demo.testfire.net" 
 
 Secret_Scan: True
