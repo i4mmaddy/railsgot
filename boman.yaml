@@ -10,7 +10,7 @@ SCA:
    language: "js" 
 
 DAST:
-   type: "Webapp" ## API, WebApp 
+   type: "WEB" ## API, WebApp 
    URL: "http://demo.testfire.net" 
 
 Secret_Scan: True
