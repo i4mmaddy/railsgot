@@ -10,7 +10,7 @@ SAST:
   language: "ruby" 
 
 #DAST:
- # type: "WEB" ## API, WEB, WEB-ADV
+ # type: "WEB" ## API, dWEB, WEB-ADV
   # URL: "https://www.boman.ai/" 
 
 Secret_Scan: True
