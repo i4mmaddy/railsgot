@@ -9,9 +9,9 @@ SCA:
 SAST:
   language: "ruby" 
 
-#DAST:
- # type: "WEB" ## API, dWEB, WEB-ADV
-  # URL: "https://www.boman.ai/" 
+DAST:
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "http://www.boman.ai/" 
 
 Secret_Scan: True
 
