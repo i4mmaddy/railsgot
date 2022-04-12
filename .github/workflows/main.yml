@@ -27,18 +27,19 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Boman SAST
-        run: pip install boman-cli --upgrade
+        run: sudo pip install boman-cli --upgrade
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: boman-cli -a run
-        continue-on-error: true
+        run: sudo boman-cli -a run
+        
 
 ## download artifcats part
-        if: always()
-      - uses: actions/download-artifact@v3
-        with:
-          name: my-artifact
+     #   if: always()
+#      - uses: actions/download-artifact@v3
+    #    with:
+    #      name: my-artifact
 
-      - name: Display structure of downloaded files
-        run: ls -R
+   #   - name: Display structure of downloaded files
+    #    run: ls -R
+#
