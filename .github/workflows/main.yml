@@ -24,21 +24,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      - name: change permission of current folder
-        run: pwd
-      - name: change permission of current folder
-        run: sudo chmod 760 /home/runner/work/railsgot/railsgot/
-      - name: pull image
-        run: sudo docker pull owasp/zap2docker-stable 
-      - name: run sample
-        run: sudo docker run --user root -v $(pwd):/zap/wrk/:rw owasp/zap2docker-stable zap-baseline.py -t https://demo.testfire.net/ -J aranga.json  
+   
         
-     #  Runs a single command using the runners shell
-    #  - name: Install packages
-    #    run: pip install boman-cli==0.9
-    #  - name: Run scan  
-      #  run: boman-cli -a run
+      # Runs a single command using the runners shell
+      - name: Install packages
+        run: pip install boman-cli==0.10
+      - name: Run scan  
+        run: boman-cli -a run
       
   
    
