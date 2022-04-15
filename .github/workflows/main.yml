@@ -30,7 +30,7 @@ jobs:
       - name: pull image
         run: docker pull owasp/zap2docker-stable 
       - name: run sample
-        run: docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw owasp/zap2docker-stable zap-baseline.py -t https://demo.testfire.net/ -J full_scan_02.json  
+        run: docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t https://demo.testfire.net/ -g gen.conf -J aranga.json  
         
      #  Runs a single command using the runners shell
     #  - name: Install packages
