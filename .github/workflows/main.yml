@@ -32,10 +32,8 @@ jobs:
       #  run: boman-cli -a run
       
       - name: pull image
-        run: docker pull owasp/zap2docker-stable 
-      - name: run sample
-        run: sudo docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable touch /zap/wrk/test.txt
-
+        run: ls -l
+        
 ## download artifcats part
      #   if: always()
 #      - uses: actions/download-artifact@v3
