@@ -1,19 +1,19 @@
 Auth:
-  project_token: "48102595-62aa-4336-ab6d-79349c9ec1d6"
+  project_token: "5b8cc92a-4d1a-4511-be49-6e3d02fcd56b"
   customer_token:  "389e4d4a-ece0-4c1c-be13-384b1434c0f6"
 
    
-SCA:
-   language: "js" 
+#SCA:
+ #  language: "js" 
 
-SAST:
-  language: "ruby" 
+#SAST:
+  #language: "ruby" 
 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://www.boman.ai/" 
 
-Secret_Scan: True
+#Secret_Scan: True
 
 
 
