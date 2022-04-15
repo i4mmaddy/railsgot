@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Boman SAST
-        run: sudo pip install boman-cli --upgrade
+        run: pip install boman-cli==0.9
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
