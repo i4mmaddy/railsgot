@@ -26,9 +26,9 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: change permission of current folder
-        run: cd ../
+        run: pwd
       - name: change permission of current folder
-        run: chmod 760 ./railsgot/
+        run: chmod 760 $(pwd)
       - name: pull image
         run: docker pull owasp/zap2docker-stable 
       - name: run sample
