@@ -6,8 +6,8 @@ Auth:
 #SCA:
  #  language: "js" 
 
-SAST:
-  language: "ruby" 
+#SAST:
+#  language: "ruby" 
 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
