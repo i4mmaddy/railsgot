@@ -6,14 +6,14 @@ Auth:
 #SCA:
  #  language: "js" 
 
-#SAST:
- # language: "ruby" 
+SAST:
+  language: "ruby" 
 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://demo.testfire.net" 
 
-#Secret_Scan: True
+Secret_Scan: True
 
 
 
