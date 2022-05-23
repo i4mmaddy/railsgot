@@ -1,19 +1,19 @@
 Auth:
-  project_token: "2156672b-7c99-4850-a817-0510cb880c72"
-  customer_token:  "3f2ceeb7-2a34-46e3-946b-2b6f73588c68"
+  project_token: "e96a1876-b84f-45aa-aaba-8822254e4b70"
+  customer_token:  "96ecc6b5-5b7f-4d97-9114-5a1ab1dc6e8e"
 
    
-SCA:
-   language: "js" 
+#SCA:
+ #  language: "js" 
 
-SAST:
-  language: "ruby" 
+#SAST:
+ # language: "ruby" 
 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://demo.testfire.net" 
 
-Secret_Scan: True
+#Secret_Scan: True
 
 
 
