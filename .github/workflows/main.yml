@@ -12,3 +12,8 @@ jobs:
         run: |
           sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==0.8
           sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
+      - name: Upload boman result raw file
+        uses: actions/upload-artifact@v3
+        with:
+          name: homework
+          path: boman_brakeman.json
