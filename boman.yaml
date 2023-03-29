@@ -1,19 +1,19 @@
 Auth:
-  project_token: "36720d9d-802f-43b7-a758-1bf088bb6ff9"
-  customer_token:  "4941f85a-5453-4f94-9247-d5565b4bd116"
+  project_token: "f0dd1da2-97e5-4e62-9f50-9c2e7a156a9e"
+  customer_token:  "a17845a1-056c-44c3-855f-9fd224de1d88"
 
    
-SCA:
-  language: "js" 
+#SCA:
+ # language: "js" 
 
 SAST:
-  language: "ruby" 
+  language: "semgrep" 
 
-DAST:
-  type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "https://juice-shop.herokuapp.com/" 
+#DAST:
+  #type: "WEB" ## API, dWEB, WEB-ADV
+ # URL: "https://juice-shop.herokuapp.com/" 
 
-Secret_Scan: True
+#Secret_Scan: True
 
 
 
