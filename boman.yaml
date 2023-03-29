@@ -6,12 +6,12 @@ Auth:
 #SCA:
  # language: "js" 
 
-SAST:
-  language: "semgrep" 
+#SAST:
+ # language: "semgrep" 
 
-#DAST:
-  #type: "WEB" ## API, dWEB, WEB-ADV
- # URL: "https://juice-shop.herokuapp.com/" 
+DAST:
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "https://juice-shop.herokuapp.com/" 
 
 #Secret_Scan: True
 
