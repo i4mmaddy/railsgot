@@ -8,7 +8,8 @@ Auth:
 
 SAST:
   language: "java"
-  target: "/var/lib/jenkins/workspace/railsgoat/saferegex-1.0.2.jar"
+  work_dir: "/var/lib/jenkins/workspace/railsgoat/"
+  target: "saferegex-1.0.2.jar"
 
 #DAST:
  # type: "WEB" ## API, dWEB, WEB-ADV
