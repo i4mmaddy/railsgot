@@ -3,17 +3,18 @@ Auth:
   customer_token:  "a17845a1-056c-44c3-855f-9fd224de1d88"
 
    
-SCA:
-  language: "js" 
+#SCA:
+ # language: "js" 
 
 SAST:
-  language: "semgrep" 
+  language: "java"
+  target: "/var/lib/jenkins/workspace/railsgoat/saferegex-1.0.2.jar"
 
-DAST:
-  type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "https://juice-shop.herokuapp.com/" 
+#DAST:
+ # type: "WEB" ## API, dWEB, WEB-ADV
+  #URL: "https://juice-shop.herokuapp.com/" 
 
-Secret_Scan: True
+#Secret_Scan: True
 
 
 
