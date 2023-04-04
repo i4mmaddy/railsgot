@@ -7,10 +7,9 @@ Auth:
  # language: "js" 
 
 SAST:
-  language: "java"
-  work_dir: "/var/lib/jenkins/workspace/railsgoat/"
-  target: "saferegex-1.0.2.jar"
+  language: "ruby"
 
+ 
 #DAST:
  # type: "WEB" ## API, dWEB, WEB-ADV
   #URL: "https://juice-shop.herokuapp.com/" 
