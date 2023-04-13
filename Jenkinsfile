@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('CICD'){
       steps{
-         sh '~/.local/bin/boman-cli -a run -cicd jenkins '
+         sh '~/.local/bin/boman-cli -a run -cicd jenkins -u https://devapi.boman.ai/v2/'
       }
     }
   }
