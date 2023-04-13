@@ -3,11 +3,11 @@ Auth:
   customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116"
 
    
-SCA:
- language: "js" 
+# SCA:
+#  language: "js" 
 
-# SAST:
-#   language: "ruby"
+SAST:
+  language: "semgrep"
 
  
 #DAST:
