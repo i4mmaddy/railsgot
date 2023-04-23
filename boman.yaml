@@ -1,8 +1,8 @@
 Auth:
-  project_token: "bbe23ac4-3d76-4721-b36e-8c6093ead6c7"
-  customer_token: "a17845a1-056c-44c3-855f-9fd224de1d88"
-#   project_token: "52ecbe5a-3f96-433e-adbb-2b58a27d36ff"
-#   customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116" dev
+#   project_token: "bbe23ac4-3d76-4721-b36e-8c6093ead6c7"
+#   customer_token: "a17845a1-056c-44c3-855f-9fd224de1d88"
+  project_token: "52ecbe5a-3f96-433e-adbb-2b58a27d36ff"
+  customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116" dev
    
 # SCA:
 #  language: "js" 
