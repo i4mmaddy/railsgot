@@ -11,7 +11,7 @@ jobs:
       - name: Boman
         run: |
           sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==0.23
-          sudo boman-cli-uat -a run -u https://dashboard.boman.ai/ -fb only-critical
+          sudo boman-cli-uat -a run -u https://dashboard.boman.ai/v2/ -fb only-critical
 #       - name: Upload boman result raw file
 #         uses: actions/upload-artifact@v3
 #         with:
