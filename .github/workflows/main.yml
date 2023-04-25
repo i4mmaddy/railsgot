@@ -11,7 +11,7 @@ jobs:
       - name: Boman
         run: |
           sudo pip install boman-cli==1.5
-          sudo boman-cli -a run -fb only-high
+          sudo boman-cli -a run -fb only-critical
 #       - name: Upload boman result raw file
 #         uses: actions/upload-artifact@v3
 #         with:
