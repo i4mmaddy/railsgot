@@ -10,7 +10,7 @@ jobs:
 
       - name: Boman
         run: |
-          sudo pip install -i https://test.pypi.org/simple/ boman-cli-uat
+          sudo pip install -i https://test.pypi.org/simple/ boman-cli-uat==12.2
           sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
 #       - name: Upload boman result raw file
 #         uses: actions/upload-artifact@v3
