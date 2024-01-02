@@ -15,8 +15,8 @@ jobs:
           sudo pip install xmltodict==0.12.0
           sudo pip install --index-url=https://test.pypi.org/simple/ boman-cli-uat==12.3
           sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
-#       - name: Upload boman result raw file
-#         uses: actions/upload-artifact@v3
-#         with:
-#           name: homework
-#           path: boman*
+      - name: Upload boman result raw file
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact files
+          path: boman*
