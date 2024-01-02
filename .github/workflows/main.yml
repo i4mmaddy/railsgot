@@ -11,6 +11,7 @@ jobs:
       - name: Boman
         run: |
           pip install coloredlogs==15.0.1
+          pip install docker==5.0.3
           pip install --index-url=https://test.pypi.org/simple/ boman-cli-uat==12.3
           boman-cli-uat -a run -u https://devapi.boman.ai/v2/
 #       - name: Upload boman result raw file
