@@ -1,0 +1,134 @@
+env:
+  contexts:
+  - name: boman_generated_context
+    urls:
+    - https://demo.testfire.net
+    authentication:
+      method: form
+      parameters:
+        loginPageUrl: https://demo.testfire.net/login.jsp
+        loginRequestUrl: https://demo.testfire.net/doLogin
+        loginRequestBody: uid={%username%}&passw={%password%}&btnSubmit=Login
+      verification:
+        method: both
+        loggedOutRegex: \QSign In\E
+        loggedInRegex: \QSign Off\E
+    users:
+    - name: Boman
+      credentials:
+        username: admin
+        password: admin
+    includePaths: []
+    excludePaths: []
+    technology:
+      exclude:
+      - C
+      - ASP
+      - IBM DB2
+      - PHP
+      - CouchDB
+      - XML
+      - Microsoft SQL Server
+      - JSP/Servlet
+      - Firebird
+      - MongoDB
+      - HypersonicSQL
+      - SAP MaxDB
+      - Ruby
+      - SCM
+      - WS
+      - Microsoft Access
+      - Sybase
+      - Python
+  parameters:
+    failOnError: true
+    failOnWarning: false
+    progressToStdout: true
+  vars: {}
+jobs:
+- parameters:
+    scanOnlyInScope: true
+    enableTags: false
+    disableAllRules: false
+  rules: []
+  name: passiveScan-config
+  type: passiveScan-config
+- parameters:
+    context: boman_generated_context
+    user: Boman
+    url: https://demo.testfire.net
+    maxDuration: 1
+    maxDepth: 2
+    maxChildren: 0
+  name: spider
+  type: spider
+  tests:
+  - onFail: INFO
+    statistic: automation.spider.urls.added
+    site: ''
+    operator: '>='
+    value: 100
+    name: At least 100 URLs found
+    type: stats
+  - name: spider logged in
+    type: stats
+    statistic: stats.auth.success
+    operator: '>='
+    value: 2
+    onFail: info
+  - name: spider failed
+    type: stats
+    statistic: stats.auth.failure
+    operator: '>='
+    value: 2
+    onFail: info
+- parameters: {}
+  name: passiveScan-wait
+  type: passiveScan-wait
+- parameters:
+    context: boman_generated_context
+    user: Boman
+    policy: ''
+    maxRuleDurationInMins: 0
+    maxScanDurationInMins: 5
+    maxAlertsPerRule: 0
+  policyDefinition:
+    defaultStrength: medium
+    defaultThreshold: medium
+    rules: []
+  tests:
+  - name: spider logged in
+    type: stats
+    statistic: stats.auth.success
+    operator: '>='
+    value: 2
+    onFail: info
+  - name: spider failed
+    type: stats
+    statistic: stats.auth.failure
+    operator: '>='
+    value: 2
+    onFail: info
+  name: activeScan
+  type: activeScan
+- parameters:
+    template: traditional-json
+    reportDir: /zap/wrk
+    reportFile: boman_zap_auth_report.json
+    reportTitle: Boman_Scanning_Report
+    reportDescription: ''
+    displayReport: false
+  risks:
+  - info
+  - low
+  - medium
+  - high
+  confidences:
+  - falsepositive
+  - low
+  - medium
+  - high
+  - confirmed
+  sites: []
+  name: report
+  type: report
