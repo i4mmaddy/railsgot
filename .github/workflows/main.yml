@@ -10,7 +10,7 @@ jobs:
 
       - name: Boman
         run: |
-          sudo docker run --rm -v ${PWD}:/zap/wrk/:rw -t owasp/zap2docker-stable:latest zap.sh -cmd -autorun /zap/wrk/boman_zap_auth_plan.yaml --user root
+          sudo docker run --rm --user $(id -u):$(id -g) -v ${PWD}:/zap/wrk/:rw -t owasp/zap2docker-stable:latest zap.sh -cmd -autorun /zap/wrk/boman_zap_auth_plan.yaml
       - name: Upload boman result raw file
         uses: actions/upload-artifact@v3
         with:
