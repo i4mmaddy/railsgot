@@ -1,5 +1,5 @@
 Auth:
-  project_token: "36720d9d-802f-43b7-a758-1bf088bb6ff9"
+  project_token: "00e27835-1980-479c-b7d7-18a3075f2b2f"
   customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116"
 #   project_token: "52ecbe5a-3f96-433e-adbb-2b58a27d36ff"
 #   customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116" # dev
@@ -13,7 +13,7 @@ Auth:
  
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "https://demo.testfire.net/" 
+  URL: "https://qa.my.acornfinance.com" 
   auth: "yes"
 
 #Secret_Scan: True
