@@ -7,8 +7,8 @@ Auth:
 SCA:
   language: "ruby" 
 
-SAST:
-  language: "semgrep"
+#SAST:
+ # language: "semgrep"
 
 
 #Secret_Scan: True
