@@ -10,8 +10,8 @@ jobs:
 
       - name: Boman
         run: |
-          pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.4
-          boman-cli-uat -a run -u https://devapi.boman.ai/v2/
+          sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.4
+          sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
           #sudo pip install boman-cli
           #sudo boman-cli -a run 
       - name: Upload boman result raw file
