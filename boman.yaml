@@ -7,8 +7,9 @@ Auth:
 #SCA:
  # language: "ruby" 
 
-SAST:
-  language: "semgrep"
+DAST:
+  type: "WEB"
+  URL: "https://demo.testfire.net"
 
 
 #Secret_Scan: True
