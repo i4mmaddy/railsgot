@@ -1,18 +1,19 @@
 Auth:
-#  project_token: "b2eff0be-8576-4168-82cf-06ae88c49b8b"
- # customer_token: "a17845a1-056c-44c3-855f-9fd224de1d88"
-   project_token: "52ecbe5a-3f96-433e-adbb-2b58a27d36ff"
-   customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116" # dev
+  project_token: "b2eff0be-8576-4168-82cf-06ae88c49b8b"
+  customer_token: "a17845a1-056c-44c3-855f-9fd224de1d88"
+ #  project_token: "52ecbe5a-3f96-433e-adbb-2b58a27d36ff"
+   #customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116" # dev
    
-#SCA:
- # language: "ruby" 
+SCA:
+  language: "ruby" 
 
 DAST:
   type: "WEB"
   URL: "https://demo.testfire.net"
 
 
-#Secret_Scan: True
+Secret_Scan: True
 
 
-
+SAST:
+  language: "semgrep"
