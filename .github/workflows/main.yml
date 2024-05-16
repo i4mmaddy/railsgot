@@ -10,8 +10,8 @@ jobs:
 
       - name: Boman
         run: |
-          #sudo python3 -m pip install -U pip
-          #sudo python3 -m pip install -U setuptools
+          sudo python3 -m pip install -U pip
+          sudo python3 -m pip install -U setuptools
           sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.7
           sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/ -uid $(id -u)
           #sudo pip install boman-cli
