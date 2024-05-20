@@ -21,8 +21,12 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
+      - name: setup upgrade
+        run: python -m pip install --upgrade pip
       - name: docker
-        run: pip install  docker
+        run: pip install docker
+      - name: setup instakk
+        run: pip install --upgrade setuptools
       - name: Install packages
         run: pip install  boman-cli==1.6
       - name: Run scan  
