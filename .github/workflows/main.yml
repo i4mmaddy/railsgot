@@ -14,7 +14,7 @@ jobs:
           #sudo python3 -m pip install -U setuptools
           #sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.7
           #sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/ -uid $(id -u)
-          sudo pip install boman-cli==1.6
+          sudo pip install boman-cli
           sudo boman-cli -a run 
       - name: Upload boman result raw file
         uses: actions/upload-artifact@v3
