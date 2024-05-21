@@ -21,10 +21,6 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
-      - name: setup upgrade
-        run: python -m pip install --upgrade pip
-      - name: install request
-        run: pip install requests==2.31.0
       - name: Install packages
         run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.10
       - name: Run scan  
