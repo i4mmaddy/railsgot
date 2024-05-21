@@ -22,8 +22,8 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: setup upgrade
-        run: python -m pip install --upgrade pip
+        run: sudo python -m pip install --upgrade pip
       - name: Install packages
-        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.8
+        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.9
       - name: Run scan  
-        run: boman-cli-uat -a run
+        run: sudo boman-cli-uat -a run
