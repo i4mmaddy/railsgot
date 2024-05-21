@@ -26,6 +26,6 @@ jobs:
       - name: install request
         run: pip install requests==2.31.0
       - name: Install packages
-        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.9
+        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.10
       - name: Run scan  
         run: boman-cli-uat -a run
