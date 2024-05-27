@@ -24,4 +24,4 @@ jobs:
       - name: Install packages
         run: sudo pip install boman-cli==1.7
       - name: Run scan  
-        run: sudo boman-cli -a run
+        run: sudo boman-cli -a run -u https://dashboard.boman.ai/v2
