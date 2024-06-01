@@ -25,8 +25,8 @@ jobs:
         uses: i4mmaddy/boman-ai-action@v6
         with:
           action: 'run' # or test-saas, test-yaml
-          failbuild: 'high' #optional # or 'high' or 'medium or 'low'
+          #failbuild: 'high' #optional # or 'high' or 'medium or 'low'
           #zap_session_script: 'path/to/your/zap_session_script' #optional
           #config: 'path/to/your/config' #optional
-          use-sudo: 'true'
+          use-sudo: 'true' #default is true
             
