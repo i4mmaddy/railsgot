@@ -22,7 +22,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: boman-ai-action
-        uses: i4mmaddy/boman-ai-action@v2
+        uses: i4mmaddy/boman-ai-action@v3
         with:
           args: '-a run'
             
