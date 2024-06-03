@@ -1,0 +1,9 @@
+Auth:
+  project_token: "a010783f-be44-4103-b8c7-a3b2c187f1fb"
+  customer_token: "70b76e8f-ad96-49b9-ad5d-cf1389168167"
+   
+Secret_Scan: True
+
+
+SAST:
+  language: "semgrep"
