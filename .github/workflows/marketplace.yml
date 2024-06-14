@@ -27,7 +27,7 @@ jobs:
           action: 'run' # or test-saas, test-yaml
           #failbuild: 'high' #optional # or 'high' or 'medium or 'low'
           #zap_session_script: 'path/to/your/zap_session_script' #optional
-          #config: './boman_dev.yaml' #optional
+          #config: './boman_qa.yaml' #optional
           use-sudo: 'true' #default is true
           boman_saas_url: 'https://qa.boman.ai'
             
