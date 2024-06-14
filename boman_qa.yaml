@@ -1,1 +1,9 @@
-4941f85a-5453-4f94-9247-d5565b4bd116
+Auth:
+  project_token: "7a898152-1a39-41ff-a525-65dd4c99ea8d"
+  customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116"
+   
+Secret_Scan: True
+
+
+SAST:
+  language: "semgrep"
