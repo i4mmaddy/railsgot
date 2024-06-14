@@ -29,5 +29,5 @@ jobs:
           #zap_session_script: 'path/to/your/zap_session_script' #optional
           #config: './boman_dev.yaml' #optional
           use-sudo: 'true' #default is true
-          #boman_saas_url: 'https://devapi.boman.ai/v2'
+          boman_saas_url: 'https://qa.boman.ai'
             
