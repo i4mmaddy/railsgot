@@ -4,3 +4,6 @@ Auth:
    
 SAST:
   language: "semgrep"
+
+SCA:
+  language: "Ruby"
