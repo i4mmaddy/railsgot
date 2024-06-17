@@ -7,3 +7,10 @@ SAST:
 
 SCA:
   language: "Ruby"
+
+SECRET: true
+
+DAST:
+  type: "WEB"
+  URL: "https://demo.testfire.net/"
+
