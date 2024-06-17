@@ -8,7 +8,7 @@ SAST:
 SCA:
   language: "Ruby"
 
-SECRET: true
+Secret_Scan: True
 
 DAST:
   type: "WEB"
