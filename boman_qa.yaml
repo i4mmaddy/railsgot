@@ -1,14 +1,13 @@
+---
 Auth:
-  project_token: "5a13ac89-a5cc-4b4c-b6ad-dd20ff73babb"
-  customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116"
-   
+  project_token: c2718976-4dee-42b9-919c-fc5f059cd1cd
+  customer_token: 42b9bed6-17cd-4b38-9fb7-47737e47f88c
 SAST:
-  language: "semgrep"
-
+  language: semgrep
 SCA:
-  language: "Ruby"
+  language: python
+Secret_Scan: true
 
-Secret_Scan: True
 
 DAST:
   type: "WEB"
