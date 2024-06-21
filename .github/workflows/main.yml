@@ -24,4 +24,4 @@ jobs:
       - name: Install packages
         run: sudo pip install boman-cli==1.8
       - name: Run scan  
-        run: sudo boman-cli -a run 
+        run: sudo boman-cli -a run -u https://devapi.boman.ai/v2/ -config ./boman_dev.yaml
