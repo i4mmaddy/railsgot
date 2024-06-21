@@ -1,12 +1,8 @@
 Auth:
-  project_token: "b2eff0be-8576-4168-82cf-06ae88c49b8b"
-  customer_token: "a17845a1-056c-44c3-855f-9fd224de1d88"
- #  project_token: "52ecbe5a-3f96-433e-adbb-2b58a27d36ff"
-   #customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116" # dev
+  project_token: "6f8bf784-fcdd-44d2-a0d3-99450c4367c8"
+  customer_token: "ad752d56-f8e8-4b3c-a70a-d35abaee21b3"
+
    
-
-
-
 Secret_Scan: True
 
 
