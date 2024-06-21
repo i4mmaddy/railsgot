@@ -24,4 +24,4 @@ jobs:
       - name: Install packages
         run: sudo pip install boman-cli==1.9
       - name: Run scan  
-        run: sudo boman-cli -a run -u https://qa.boman.ai -config ./boman_qa.yaml
+        run: sudo boman-cli -a run -u https://dash.boman.ai 
