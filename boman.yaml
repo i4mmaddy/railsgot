@@ -5,6 +5,9 @@ Auth:
    
 Secret_Scan: True
 
+DAST:
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "http://testfire.net/"
 
 SAST:
   language: "semgrep"
