@@ -5,4 +5,4 @@ Auth:
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://demo.testfire.net" 
-  Auth : "yes"
+  auth : "yes"
