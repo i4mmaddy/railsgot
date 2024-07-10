@@ -1,15 +1,7 @@
----
 Auth:
   project_token: "f9b4844c-aba2-4765-a281-d5faf75e4324"
   customer_token: "42b9bed6-17cd-4b38-9fb7-47737e47f88c"
    
-Secret_Scan: True
-
-
-SAST:
-  language: "semgrep"
-
-
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://demo.testfire.net" 
