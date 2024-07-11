@@ -1,0 +1,8 @@
+Auth:
+  project_token: "6d4dca7d-cf4a-4981-b935-6db9424d1c74"
+  customer_token: "5b2f4dbd-a873-4042-8441-ff38fef71ed5"
+   
+DAST:
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "http://demo.testfire.net" 
+  auth : "yes"
