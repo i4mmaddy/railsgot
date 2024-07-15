@@ -6,3 +6,12 @@ DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://demo.testfire.net" 
   auth : "yes"
+   
+SAST:
+  language: "nodejs"
+
+SCA:
+   language: "js" #language optional
+ 
+Secret_Scan: True
+  
