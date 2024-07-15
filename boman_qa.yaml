@@ -8,7 +8,7 @@ DAST:
   auth : "yes"
    
 SAST:
-  language: "nodejs"
+  language: "semgrep"
 
 SCA:
    language: "js" #language optional
