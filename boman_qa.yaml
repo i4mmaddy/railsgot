@@ -1,6 +1,6 @@
 Auth:
-  project_token: "115c2c26-fda5-4c12-b3e6-23fdc200e6c2"
-  customer_token: "5b2f4dbd-a873-4042-8441-ff38fef71ed5"
+  project_token: "b46586ad-155d-4fe3-a984-d9d517a1bd11"
+  customer_token: "4941f85a-5453-4f94-9247-d5565b4bd116"
    
 #DAST:
  # type: "WEB" ## API, dWEB, WEB-ADV
