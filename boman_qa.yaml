@@ -10,8 +10,8 @@ Auth:
 SAST:
   language: "semgrep"
 
-#SCA:
- # language: "js" #language optional
+SCA:
+  language: "js" #language optional
  
 #Secret_Scan: True
   
