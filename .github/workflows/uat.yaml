@@ -18,10 +18,12 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
-      - name: Install packages
+       - name: Install packages
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
+        #sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -config ./boman_qa.yaml -u https://qa.boman.ai
+        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at 6d4dca7d-cf4a-4981-b935-6db9424d1c74 -ct 5b2f4dbd-a873-4042-8441-ff38fef71ed5
+        #sudo boman-cli -a run -u https://dashboard.boman.ai/
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
