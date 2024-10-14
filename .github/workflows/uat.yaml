@@ -22,7 +22,7 @@ jobs:
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
         #sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://qa.boman.ai 
+        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -config ./boman_qa_juiceshop.yaml
         #-at 6d4dca7d-cf4a-4981-b935-6db9424d1c74 -ct 5b2f4dbd-a873-4042-8441-ff38fef71ed5
         #sudo boman-cli -a run -u https://dashboard.boman.ai/
 
