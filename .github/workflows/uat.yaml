@@ -19,7 +19,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install packages
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
+        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==15.2.3
         #sudo pip install boman-cli
       - name: Run scan  
         run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at ${{secrets.BOMAN_APP_TOKEN}} -ct ${{secrets.BOMAN_CUSTOMER_TOKEN}}
