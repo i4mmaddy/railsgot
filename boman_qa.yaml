@@ -5,7 +5,7 @@ Auth:
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://demo.testfire.net" 
-  auth : "yes"
+  #auth : "yes"
    
 #SAST:
   #language: "semgrep"
