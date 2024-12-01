@@ -22,8 +22,8 @@ jobs:
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==15.2.3
         #sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at ${{secrets.BOMAN_APP_TOKEN}} -ct ${{secrets.BOMAN_CUSTOMER_TOKEN}}
-        #sudo boman-cli -a run -u https://dashboard.boman.ai/
+        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -config ./boman_qa.yaml
+        #sudo boman-cli -a run -u https://dashboard.boman.ai/ -at ${{secrets.BOMAN_APP_TOKEN}} -ct ${{secrets.BOMAN_CUSTOMER_TOKEN}}
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
