@@ -7,12 +7,12 @@ Auth:
  # URL: "http://demo.testfire.net" 
  # auth : "yes"
    
-#SAST:
-  #language: "semgrep"
+SAST:
+  language: "semgrep"
 
-#SCA:
- # language: "js" #language optional
+SCA:
+  language: "js" #language optional
  
-#Secret_Scan: True
+Secret_Scan: True
   
-#SBOM: true
+SBOM: true
