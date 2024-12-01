@@ -2,17 +2,17 @@ Auth:
   project_token: "e3a1dd22-f01f-4bcb-aa65-a96c7ebceb48"
   customer_token: "5b2f4dbd-a873-4042-8441-ff38fef71ed5"
    
-DAST:
-  type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "http://demo.testfire.net" 
+#DAST:
+ # type: "WEB" ## API, dWEB, WEB-ADV
+ # URL: "http://demo.testfire.net" 
   #auth : "yes"
    
-#SAST:
-  #language: "semgrep"
+SAST:
+  language: "semgrep"
 
-#SCA:
-  #language: "js" #language optional
+SCA:
+  language: "js" #language optional
  
-#Secret_Scan: True
+Secret_Scan: True
   
-#SBOM: true
+SBOM: true
