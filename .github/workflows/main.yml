@@ -24,4 +24,4 @@ jobs:
       - name: Install packages
         run: sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli -a run 
+        run: sudo boman-cli -a run -at 6a3662c5-3a4b-4911-b8c9-3e5a5eed109d -ct ad752d56-f8e8-4b3c-a70a-d35abaee21b3
