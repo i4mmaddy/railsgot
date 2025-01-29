@@ -33,4 +33,5 @@ jobs:
           path: |
             boman_zap_auth_plan.yaml
             session_management.js
+            boman_semgrep.jsoin
           retention-days: 5
