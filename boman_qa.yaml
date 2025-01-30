@@ -16,3 +16,10 @@ SCA:
 Secret_Scan: True
   
 SBOM: true
+
+
+container_scan:
+  type: config
+  target: "/"
+IAC:
+  target: "/"
