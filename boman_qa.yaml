@@ -8,7 +8,7 @@ DAST:
   #auth : "yes"
    
 SAST:
-  language: "opengrep"
+  language: "semgrep"
 
 SCA:
   language: "js" #language optional
