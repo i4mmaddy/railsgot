@@ -18,8 +18,8 @@ SAST:
 #SBOM: true
 
 
-container_scan:
-  type: config
-  target: "/"
-IAC:
-  target: "/"
+#container_scan:
+ # type: config
+  #target: "/"
+#IAC:
+ # target: "/"
