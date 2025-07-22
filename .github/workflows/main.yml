@@ -24,4 +24,4 @@ jobs:
       - name: Install packages
         run: pip install boman-cli==2.4.11
       - name: Run scan  
-        run: boman-cli -a run 
+        run: boman-cli -a run -config ./boman_qa.yaml -u https://qa.boman.ai
