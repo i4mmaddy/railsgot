@@ -11,4 +11,4 @@ Secret_Scan: True
  # auth: "yes"
 
 SAST:
-  language: "semgrep"
+  language: "opengrep"
