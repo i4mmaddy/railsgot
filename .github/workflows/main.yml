@@ -22,6 +22,6 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install packages
-        run: pip install boman-cli==2.4.11
+        run: pip install boman-cli==2.5.0
       - name: Run scan  
-        run: boman-cli -a run -config ./boman_qa.yaml -u https://qa.boman.ai
+        run: boman-cli -a run
