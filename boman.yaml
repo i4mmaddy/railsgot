@@ -1,14 +1,14 @@
 Auth:
-  project_token: "5b8652c4-5c75-4ea1-87c8-a70c9e380522"
-  customer_token: "00c389e2-aace-48c6-8aab-4c0407a711cd"
+  project_token: "8220da47-9bfe-42f5-bf64-51186a73eebd"
+  customer_token: "41bb9111-e57f-43d9-aa15-8c2e751ddb36"
 
    
-#Secret_Scan: True
+Secret_Scan: True
 
-DAST:
-  type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "http://testfire.net/"
-  auth: "yes"
+#DAST:
+ # type: "WEB" ## API, dWEB, WEB-ADV
+ # URL: "http://testfire.net/"
+ # auth: "yes"
 
-#SAST:
- # language: "semgrep"
+SAST:
+  language: "semgrep"
