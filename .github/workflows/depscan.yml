@@ -22,7 +22,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Run Depscan
-        run: docker run --rm -v $PWD:/app ghcr.io/owasp-dep-scan/dep-scan depscan --src /app --reports-dir /app/depscan/
+        run: sudo docker run --rm -v $PWD:/app ghcr.io/owasp-dep-scan/dep-scan depscan --src /app --reports-dir /app/depscan/
 
 
       - name: Upload Artifacts
