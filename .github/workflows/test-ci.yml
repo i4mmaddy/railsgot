@@ -23,7 +23,7 @@ jobs:
         python-version: '3.9'
 
     - name: Run CI Git Info Script
-      run: python ci_gen.py
+      run: python ci-gen.py
       env:
         # Pass any additional env vars if needed, though the script reads standard GITHUB_* vars automatically
         PYTHONUNBUFFERED: 1
