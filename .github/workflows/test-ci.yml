@@ -28,8 +28,4 @@ jobs:
         # Pass any additional env vars if needed, though the script reads standard GITHUB_* vars automatically
         PYTHONUNBUFFERED: 1
 
-    - name: Upload Report
-      uses: actions/upload-artifact@v3
-      with:
-        name: ci-git-report
-        path: ci_git_report.json
+
