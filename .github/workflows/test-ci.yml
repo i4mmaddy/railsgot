@@ -1,0 +1,35 @@
+name: Test CI Git Info Script
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  extract-git-info:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # Important: Fetch all history for git diffs to work correctly
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Run CI Git Info Script
+      run: python ci_gen.py
+      env:
+        # Pass any additional env vars if needed, though the script reads standard GITHUB_* vars automatically
+        PYTHONUNBUFFERED: 1
+
+    - name: Upload Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: ci-git-report
+        path: ci_git_report.json
