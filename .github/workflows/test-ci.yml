@@ -13,20 +13,27 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0 # Important: Fetch all history for git diffs to work correctly
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.9'
 
     - name: Run CI Git Info Script
       run: python ci-gen.py
       env:
-        # Pass any additional env vars if needed, though the script reads standard GITHUB_* vars automatically
         PYTHONUNBUFFERED: 1
+
+    - name: Run OpenGrep (Docker)
+      run: |
+        docker run --rm -v ${{ github.workspace }}:/src returntocorp/semgrep semgrep scan --config=auto --json --output=opengrep.json
+      continue-on-error: true
+
+    - name: Correlate Findings
+      run: python correlate_findings.py --git-report ci_git_report.json --opengrep-report opengrep.json --output vulnerability_report.json
 
     - name: Upload Reports
       uses: actions/upload-artifact@v4
@@ -34,5 +41,5 @@ jobs:
         name: security-reports
         path: |
           ci_git_report.json
-
-
+          opengrep.json
+          vulnerability_report.json
