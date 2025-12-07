@@ -54,14 +54,13 @@ def main():
         if not path or not start_line:
             continue
             
-        # Normalize path (sometimes they are relative, sometimes absolute)
-        # We assume git report uses relative paths from root, similar to what git diff returns
-        # We might need to handle ./ prefix
+        # Normalize path (remove leading ./ or /) to match git output
+        normalized_path = path.lstrip('./').lstrip('/')
         
         # Check if file was changed
-        if path in changed_lines:
+        if normalized_path in changed_lines:
             # Check if line was changed
-            if start_line in changed_lines[path]:
+            if start_line in changed_lines[normalized_path]:
                 # Match found!
                 enriched_finding = finding.copy()
                 enriched_finding['commit_details'] = commit_details
