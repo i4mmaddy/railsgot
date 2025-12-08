@@ -32,14 +32,18 @@ jobs:
         docker run --rm -v ${{ github.workspace }}:/src returntocorp/semgrep semgrep scan --config=auto --json --output=opengrep.json
       continue-on-error: true
 
-    - name: Correlate Findings
-      run: python correlate_findings.py --git-report ci_git_report.json --opengrep-report opengrep.json --output vulnerability_report.json
+   ## - name: Correlate Findings
+    #  run: python correlate_findings.py --git-report ci_git_report.json --opengrep-report opengrep.json --output vulnerability_report.json
 
+    - name: Full fetcher
+      run: python ci-full-history.py
+
+  
     - name: Upload Reports
       uses: actions/upload-artifact@v4
       with:
         name: security-reports
         path: |
-          ci_git_report.json
+          git_history.json
           opengrep.json
-          vulnerability_report.json
+          #vulnerability_report.json
