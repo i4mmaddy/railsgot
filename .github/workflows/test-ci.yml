@@ -36,7 +36,7 @@ jobs:
     #  run: python correlate_findings.py --git-report ci_git_report.json --opengrep-report opengrep.json --output vulnerability_report.json
 
     - name: Full fetcher
-      run: python ci-full-history.py
+      run: python get_lines_author.py correlate_findings.py --lines 10-15 --trace
 
   
     - name: Upload Reports
