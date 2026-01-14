@@ -16,12 +16,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so yours job can access it
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       
       # Runs a single command using the runners shell
       - name: Install packages
-        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==15.6.0
+        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==15.6.1
         #run: pip install boman-cli==2.4.6
       - name: Run scan  
         run: boman-cli-uat -a run -u https://qa.boman.ai -config ./boman_qa2.yaml
