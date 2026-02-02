@@ -22,6 +22,6 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install packages
-        run: sudo pip install boman-cli==2.5.0
+        run: sudo pip install boman-cli==2.5.3
       - name: Run scan  
         run: sudo boman-cli -a run -ct 41bb9111-e57f-43d9-aa15-8c2e751ddb36 -at 8220da47-9bfe-42f5-bf64-51186a73eebd
