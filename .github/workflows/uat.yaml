@@ -34,4 +34,5 @@ jobs:
             boman_zap_auth_plan.yaml
             session_management.js
             boman_semgrep.jsoin
+            cloc.json
           retention-days: 5
