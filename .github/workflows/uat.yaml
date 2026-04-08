@@ -21,6 +21,8 @@ jobs:
       - name: Install packages
        # run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==15.6.11
         run: sudo pip install boman-cli==2.5.9
+      - name: Install packages
+        run: python --version
       - name: Run scan  
         run: sudo boman-cli -a run -u https://qa.boman.ai -config ./boman_qa.yaml
         #run: sudo boman-cli-uat -a run -u https://qa.boman.ai -config ./boman_qa.yaml
